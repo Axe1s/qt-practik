@@ -27,16 +27,11 @@ private:
 private slots:
     void enteredNumbers();
     void calculation();
+    void math();
     void on_pushButtonPlusMinus_clicked();
     void on_pushButtonCE_clicked();
-
     void on_pushButtonBS_clicked();
-    void on_pushButtonPlus_clicked();
     void on_pushButtonEquality_clicked();
-    void on_pushButtonMinus_clicked();
-    void on_pushButtonMulc_clicked();
-    void on_pushButtonDivide_clicked();
-    void on_pushButtonProcents_clicked();
 };
 
 

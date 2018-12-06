@@ -18,6 +18,11 @@ calculater::calculater(QWidget *parent) :
     connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(enteredNumbers()));
     connect(ui->pushButton_9,SIGNAL(clicked()),this,SLOT(enteredNumbers()));
     connect(ui->pushButtonPoint,SIGNAL(clicked()),this,SLOT(enteredNumbers()));
+    connect(ui->pushButtonPlus,SIGNAL(clicked()),this,SLOT(math()));
+    connect(ui->pushButtonMinus,SIGNAL(clicked()),this,SLOT(math()));
+    connect(ui->pushButtonMulc,SIGNAL(clicked()),this,SLOT(math()));
+    connect(ui->pushButtonDivide,SIGNAL(clicked()),this,SLOT(math()));
+    connect(ui->pushButtonProcents,SIGNAL(clicked()),this,SLOT(math()));
 
     m_strDisplay = "";
     dValFirst = 0;
@@ -81,58 +86,55 @@ void calculater::on_pushButtonBS_clicked()
     ui->lcdNumber->display(m_strDisplay.toDouble());
 }
 
-void calculater::on_pushButtonPlus_clicked()
+
+void calculater::math()
 {
     calculation();
 
-    dValFirst = m_strDisplay.toDouble();
-    bPlus   = true;
+    bPlus   = false;
     bMinus  = false;
     bMult   = false;
     bDiv    = false;
     bProc   = false;
-    m_strDisplay = "";
-
-}
-
-void calculater::on_pushButtonMinus_clicked()
-{
-    calculation();
 
     dValFirst = m_strDisplay.toDouble();
-    bPlus   = false;
-    bMinus  = true;
-    bMult   = false;
-    bDiv    = false;
-    bProc   = false;
-    m_strDisplay = "";
-}
 
-void calculater::on_pushButtonMulc_clicked()
-{
-    calculation();
-
-    dValFirst = m_strDisplay.toDouble();
-    bPlus   = false;
-    bMinus  = false;
-    bMult   = true;
-    bDiv    = false;
-    bProc   = false;
+    QString button = ((QPushButton*)sender())->text();
+    if (button.contains("+"))
+    {
+        bPlus   = true;
+    }
+    if (button.contains("-"))
+    {
+        bMinus   = true;
+    }
+    if (button.contains("*"))
+    {
+        bMult   = true;
+    }
+    if (button == "/")
+    {
+        bDiv   = true;
+    }
+    if (button == "%")
+    {
+        bProc   = true;
+    }
     m_strDisplay = "";
 }
 
-void calculater::on_pushButtonDivide_clicked()
+void calculater::on_pushButtonEquality_clicked()
 {
     calculation();
 
-    dValFirst = m_strDisplay.toDouble();
     bPlus   = false;
     bMinus  = false;
     bMult   = false;
-    bDiv    = true;
+    bDiv    = false;
     bProc   = false;
-    m_strDisplay = "";
+    dValFirst = 0;
 }
+
 
 void calculater::calculation()
 {
@@ -165,36 +167,7 @@ void calculater::calculation()
     if (bPlus || bMinus || bMult || bDiv || bProc)
     {
         ui->lcdNumber->display(dVal);
-//        dValFirst = dVal;
         m_strDisplay = QString::number(dVal);
     }
 
-}
-
-void calculater::on_pushButtonEquality_clicked()
-{
-    calculation();
-
-    bPlus   = false;
-    bMinus  = false;
-    bMult   = false;
-    bDiv    = false;
-    bProc   = false;
-    dValFirst = 0;
-}
-
-
-
-
-void calculater::on_pushButtonProcents_clicked()
-{
-    calculation();
-
-    dValFirst = m_strDisplay.toDouble();
-    bPlus   = false;
-    bMinus  = false;
-    bMult   = false;
-    bDiv    = false;
-    bProc   = true;
-    m_strDisplay = "";
 }
