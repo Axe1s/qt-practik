@@ -25,6 +25,7 @@ calculater::calculater(QWidget *parent) :
     bMinus  = false;
     bMult   = false;
     bDiv    = false;
+    bProc   = false;
 
 }
 
@@ -45,6 +46,7 @@ void calculater::on_pushButtonCE_clicked()
     bMinus  = false;
     bMult   = false;
     bDiv    = false;
+    bProc   = false;
 }
 
 void calculater::enteredNumbers()
@@ -84,10 +86,11 @@ void calculater::on_pushButtonPlus_clicked()
     calculation();
 
     dValFirst = m_strDisplay.toDouble();
-    bPlus = true;
+    bPlus   = true;
     bMinus  = false;
     bMult   = false;
     bDiv    = false;
+    bProc   = false;
     m_strDisplay = "";
 
 }
@@ -101,6 +104,7 @@ void calculater::on_pushButtonMinus_clicked()
     bMinus  = true;
     bMult   = false;
     bDiv    = false;
+    bProc   = false;
     m_strDisplay = "";
 }
 
@@ -113,6 +117,7 @@ void calculater::on_pushButtonMulc_clicked()
     bMinus  = false;
     bMult   = true;
     bDiv    = false;
+    bProc   = false;
     m_strDisplay = "";
 }
 
@@ -125,6 +130,7 @@ void calculater::on_pushButtonDivide_clicked()
     bMinus  = false;
     bMult   = false;
     bDiv    = true;
+    bProc   = false;
     m_strDisplay = "";
 }
 
@@ -151,7 +157,12 @@ void calculater::calculation()
         dVal = dValFirst / m_strDisplay.toDouble();
     }
 
-    if (bPlus || bMinus || bMult || bDiv)
+    if (bProc)
+    {
+        dVal = dValFirst * (m_strDisplay.toDouble())* 0.01;
+    }
+
+    if (bPlus || bMinus || bMult || bDiv || bProc)
     {
         ui->lcdNumber->display(dVal);
 //        dValFirst = dVal;
@@ -168,8 +179,22 @@ void calculater::on_pushButtonEquality_clicked()
     bMinus  = false;
     bMult   = false;
     bDiv    = false;
+    bProc   = false;
     dValFirst = 0;
 }
 
 
 
+
+void calculater::on_pushButtonProcents_clicked()
+{
+    calculation();
+
+    dValFirst = m_strDisplay.toDouble();
+    bPlus   = false;
+    bMinus  = false;
+    bMult   = false;
+    bDiv    = false;
+    bProc   = true;
+    m_strDisplay = "";
+}

@@ -21,7 +21,7 @@ private:
     QStack<QString> m_stk;
     QString         m_strDisplay;
     double dValFirst, dValSecond;
-    bool bPlus, bMinus, bMult, bDiv;
+    bool bPlus, bMinus, bMult, bDiv, bProc;
 
 
 private slots:
@@ -36,6 +36,7 @@ private slots:
     void on_pushButtonMinus_clicked();
     void on_pushButtonMulc_clicked();
     void on_pushButtonDivide_clicked();
+    void on_pushButtonProcents_clicked();
 };
 
 
