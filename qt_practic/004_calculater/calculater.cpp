@@ -41,7 +41,7 @@ calculater::~calculater()
 
 void calculater::on_pushButtonCE_clicked()
 {
-    m_stk.clear();
+
     m_strDisplay = "";
     ui->lcdNumber->display(0);
 

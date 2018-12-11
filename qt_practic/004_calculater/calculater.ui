@@ -23,6 +23,13 @@
       <height>80</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     border: 2px solid #8f8f91;
@@ -47,6 +54,9 @@ QPushButton:default {
     <property name="text">
      <string>CE</string>
     </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonBS">
     <property name="geometry">
@@ -56,6 +66,12 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -82,6 +98,9 @@ QPushButton:default {
     <property name="text">
      <string>BackSpace</string>
     </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonPlusMinus">
     <property name="geometry">
@@ -91,6 +110,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -127,6 +153,13 @@ QPushButton:default {
       <height>80</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     border: 2px solid #8f8f91;
@@ -162,6 +195,13 @@ QPushButton:default {
       <height>80</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
     border: 2px solid #8f8f91;
@@ -187,6 +227,9 @@ QPushButton:default {
     <property name="text">
      <string>3</string>
     </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonDivide">
     <property name="geometry">
@@ -196,6 +239,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -222,6 +272,9 @@ QPushButton:default {
     <property name="text">
      <string>/</string>
     </property>
+    <property name="shortcut">
+     <string>/</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
@@ -231,6 +284,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -257,6 +317,9 @@ QPushButton:default {
     <property name="text">
      <string>2</string>
     </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1">
     <property name="geometry">
@@ -266,6 +329,14 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -292,6 +363,9 @@ QPushButton:default {
     <property name="text">
      <string>1</string>
     </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonMulc">
     <property name="geometry">
@@ -301,6 +375,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -327,6 +408,9 @@ QPushButton:default {
     <property name="text">
      <string>*</string>
     </property>
+    <property name="shortcut">
+     <string>*</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
@@ -336,6 +420,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -362,6 +453,9 @@ QPushButton:default {
     <property name="text">
      <string>6</string>
     </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
@@ -371,6 +465,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -397,6 +498,9 @@ QPushButton:default {
     <property name="text">
      <string>4</string>
     </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
@@ -406,6 +510,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -432,6 +543,9 @@ QPushButton:default {
     <property name="text">
      <string>5</string>
     </property>
+    <property name="shortcut">
+     <string>5</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonMinus">
     <property name="geometry">
@@ -441,6 +555,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -467,6 +588,9 @@ QPushButton:default {
     <property name="text">
      <string>-</string>
     </property>
+    <property name="shortcut">
+     <string>-</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9">
     <property name="geometry">
@@ -476,6 +600,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -502,6 +633,9 @@ QPushButton:default {
     <property name="text">
      <string>9</string>
     </property>
+    <property name="shortcut">
+     <string>9</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
@@ -511,6 +645,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -537,6 +678,9 @@ QPushButton:default {
     <property name="text">
      <string>7</string>
     </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
@@ -546,6 +690,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -572,6 +723,9 @@ QPushButton:default {
     <property name="text">
      <string>8</string>
     </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_0">
     <property name="geometry">
@@ -581,6 +735,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -607,6 +768,9 @@ QPushButton:default {
     <property name="text">
      <string>0</string>
     </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonPlus">
     <property name="geometry">
@@ -616,6 +780,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -642,6 +813,9 @@ QPushButton:default {
     <property name="text">
      <string>+</string>
     </property>
+    <property name="shortcut">
+     <string>+</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonPoint">
     <property name="geometry">
@@ -651,6 +825,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -677,6 +858,9 @@ QPushButton:default {
     <property name="text">
      <string>.</string>
     </property>
+    <property name="shortcut">
+     <string>.</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButtonEquality">
     <property name="geometry">
@@ -686,6 +870,13 @@ QPushButton:default {
       <width>84</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -712,6 +903,9 @@ QPushButton:default {
     <property name="text">
      <string>=</string>
     </property>
+    <property name="shortcut">
+     <string>Enter</string>
+    </property>
    </widget>
    <widget class="QLCDNumber" name="lcdNumber">
     <property name="geometry">
@@ -721,6 +915,13 @@ QPushButton:default {
       <width>331</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="digitCount">
      <number>15</number>

@@ -2,7 +2,6 @@
 #define CALCULATER_H
 
 #include <QMainWindow>
-#include <QStack>
 
 namespace Ui {
 class calculater;
@@ -18,9 +17,9 @@ public:
 
 private:
     Ui::calculater *ui;
-    QStack<QString> m_stk;
+
     QString         m_strDisplay;
-    double dValFirst, dValSecond;
+    double dValFirst;
     bool bPlus, bMinus, bMult, bDiv, bProc;
 
 
