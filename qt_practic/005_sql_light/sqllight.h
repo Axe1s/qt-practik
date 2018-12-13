@@ -18,6 +18,7 @@ public:
     ~sqllight();
 
 private slots:
+    void editData();
     void on_pushButtonAdd_clicked();
 
 private:

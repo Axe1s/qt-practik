@@ -1,5 +1,6 @@
 #include "sqllight.h"
 #include "ui_sqllight.h"
+#include "bookedit.h"
 
 sqllight::sqllight(QWidget *parent) :
     QMainWindow(parent),
@@ -24,5 +25,14 @@ sqllight::~sqllight()
 
 void sqllight::on_pushButtonAdd_clicked()
 {
+    editData();
+}
+
+void sqllight::editData()
+{
+    bookedit * pAddDate = new bookedit (this);
+    pAddDate->exec();
+    delete pAddDate;
+    model.select();
 
 }
