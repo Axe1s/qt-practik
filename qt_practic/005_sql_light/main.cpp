@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
     QSqlDatabase dbase = QSqlDatabase::addDatabase("QSQLITE"); //Создание подключения базы данных
     dbase.setDatabaseName ("base/base.db"); //Путь к базе данных
 
+
     if (!dbase.open())  //Проверка соединения с базой данных
     {
         qDebug() << "No connect";
